@@ -1,0 +1,11 @@
+import math
+a=int(input("enter the value of a: "))
+b= int(input("enter the value of b: "))
+c=int(input("enter the value of c: "))
+d=(b**2)-(4*a*c)
+if d>=0:
+    root_1=(-b-math.sqrt(d))/(2*a)
+    root_2=(-b+math.sqrt(d))/(2*a)
+    print("the roots are",root_1,root_2)
+else:
+    print("Roots are imaginary")

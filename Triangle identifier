@@ -1,0 +1,20 @@
+a= int(input("enter the value of first side"))
+b=int(input("enter the value of secnd side"))
+c= int(input("enter  the value of third side"))
+peri= a+b+c
+s= peri/2
+area= (s*(s-a)*(s-b)*(s-c))**0.5 
+if (a+b<=c) or (b+c<=a) or (c+a<=b):
+    print("the triangle is invalid")
+elif (a==b==c):
+    print("it is an Equilateral Triangle")
+    print("perimeter is ",peri)
+    print("area is  ",area)
+elif (a==b!=c) or (b==c!=a) or (a==c!=b):
+    print("it is an Isosceles Triangle")
+    print("perimeter is ",peri)
+    print("area is  ",area)
+else:
+    print("it is an Scalene Triangle")
+    print("perimeter is ",peri)
+    print("area is  ",area)

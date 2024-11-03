@@ -1,0 +1,32 @@
+print("press 1 for thr summation of all naural numbers of a givn range")
+print("press 2 for factorial of a given number")
+print("press 3 for summation of all even and odd numbers of a given range")
+a=int(input("enter value: "))
+if a==1:
+    i= int(input("enter the value of i "))
+    j= int(input("enter the value of j "))
+    s=0
+    while i<=j:
+        s=s+i
+        i=i+1
+    print("the value of sum is :",s)
+elif a==2:
+    n=int(input("input the desired no. "))
+    fac=1
+    while n>0:
+        fac=n*fac
+        n=n-1
+    print("factorial of no. ",fac)
+else:
+    u=int(input("enter the upper limit: "))
+    l=int(input("enter the lower limit: "))
+    so=0
+    se=0
+    while l<=u:
+        if l%2==0:
+            se=l+se
+        else:
+            so=l+so
+        l=l+1
+    print("the sum of even no. is: ",se)
+    print("the sum of odd no. is: ",so)
