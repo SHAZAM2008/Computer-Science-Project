@@ -1,0 +1,19 @@
+s=int(input("Enter salary: "))
+i=int(input("enter your investment returns"))
+b=int(input("enter business income; "))
+total=(s+i+b)*12
+print("total income:",total)
+if (total>1)and (total<=300000):
+    print("total income: ",total)
+elif (total>300000)and (total<=500000):
+    total=(total-total*0.1)
+    print("total income: ",total)
+elif (total>500000)and (total<=800000):
+    total=(total-total*0.2)
+    print("total income: ",total)
+elif (total>800000)and (total<=1000000):
+    total=(total-total*0.3)
+    print("total income: ",total)
+elif (total>1000000):
+    total=(total-total*0.4)
+    print("total income: ",total)

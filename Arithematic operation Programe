@@ -1,0 +1,10 @@
+x=int(input("enter the first no: "))
+c=int(input("enter the second no: "))
+add=x+c
+mult=x*c
+sub=x-c
+div=x/c
+print("The Addition of the numbers are ",add)
+print("The subtration of the numbers are ",sub)
+print("The multiplication of the numbers are",mult)
+print("The division of the numbers are",div)
